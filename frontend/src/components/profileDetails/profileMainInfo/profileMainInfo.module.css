@@ -1,0 +1,325 @@
+.profileInfoContainer {
+  display: flex;
+  background-color: var(--neutral-white-n10);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: -100px;
+  position: relative;
+  gap: 24px;
+}
+
+.profilePhotoContainer { 
+  max-width: 320px;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.emptyImageWrapper {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  height: 440px;
+  background-color: var(--neutral-n20);
+  display: flex;
+  justify-content: center;
+}
+
+.emptyImageContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  align-items: center;
+}
+
+.editButtonEmptyState {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: var(--neutral-white-n10);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.editButton, .editProfilePictureButton, .emptyEditButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: var(--neutral-white-n10);
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px;
+}
+
+.editButton, .emptyEditButton {
+  border: 1px solid var(--color-main);
+}
+
+.editButton:hover, .editButtonEmptyState:hover, .emptyEditButton:hover {
+  opacity: 80%;
+}
+
+.editButtonMobile, .emptyEditButtonMobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: var(--neutral-white-n10);
+  cursor: pointer;
+  position: absolute;
+  bottom: 23px;
+  right: 8px;
+  padding: 8px;
+}
+
+.editText {
+  color: var(--color-main);
+  font-family: var(--primary-bold-font);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.editButtonMobile, .emptyEditButtonMobile {
+  display: none;
+}
+
+.uploadText {
+  color: var(--neutral-n90);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.invalidBorder {
+  border: 1px solid var(--red-r5);
+}
+
+.invalidText {
+  color: var(--red-r5);
+}
+
+.iconUpload {
+  display: flex;
+  background-color: var(--neutral-white-n10);
+  border-radius: 10px;
+  border: 1px solid var(--neutral-white-n10);
+  cursor: pointer;
+}
+
+.available {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 24px;
+  background: var(--color-main);
+  padding: 5px 10px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.badge {
+  color: var(--neutral-white-n10);
+  font-family: var(--primary-bold-font);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.digitalService {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--color-main);
+  padding: 4px 11px;
+}
+
+.digitalText {
+  color: var(--neutral-white-n10);
+  font-family: var(--primary-font);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.profileInfoWrapper {
+  width: 100%;
+}
+
+.profileFullNameAndAvailability {
+  display: flex;
+  column-gap: 16px;
+  row-gap: 5px;
+  padding-block: 20px 32px;
+  align-items: center;
+}
+
+.profileFullName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--headings-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  max-width: 40%;
+}
+
+.profileFullName.fullWidth {
+  max-width: 70%;
+}
+
+.profileInfoTextContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
+  column-gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--neutral-n30);
+}
+
+.profileInfoLabel { 
+  font-family: var(--primary-font);
+  font-size: 14;
+  display: block;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.profileInfoData {
+  font-family: var(--primary-bold-font);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.providerContactInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.providerFavoriteIcon {
+  position: absolute;
+  top: var(--star-icon-top);
+  left: 14px;
+  z-index: 1;
+  background-color: var(--neutral-white-n10);
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+@media screen and (max-width: 1069px) {
+  .profileFullNameAndAvailability {
+    flex-wrap: wrap;
+  }
+
+  .profileInfoTextContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .profileFullName,
+  .profileFullName.fullWidth {
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .profileInfoContainer {
+    display: block;
+    margin-top: -10px;
+    padding: 16px;
+  }
+  
+  .profileInfoTextContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profilePhotoContainer {
+    max-width: 100%;
+  }
+
+  .profileFullName {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .profileInfoLabel {
+    font-size: 14px;
+  }
+
+  .profileInfoTextContainer {
+    row-gap: 24px;
+    padding-bottom: 16px;
+  }
+
+  .profileFullNameAndAvailability {
+    max-width: unset;
+  }
+
+  .editButtonMobile {
+    display: flex;
+  }
+
+  .editButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .emptyEditButtonMobile {
+    display: flex;
+  }
+
+  .emptyEditButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .editText {
+    display: none;
+  }
+
+  .providerContactInfo {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .profileInfoWrapper {
+    max-width: calc(100% - 320px - 24px);
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1100px) {
+  .profileFullNameAndAvailability.isDashboardPage {
+    padding-block: 35px;
+  }
+}

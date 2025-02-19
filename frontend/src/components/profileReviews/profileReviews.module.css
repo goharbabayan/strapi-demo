@@ -1,0 +1,125 @@
+.mainWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  column-gap: 24px;
+  padding-bottom: 24px;
+  overflow: hidden;
+
+}
+
+.reviews {
+  width: 100%;
+  padding-right: 0;
+  
+}
+
+.checkbox {
+  display: flex;
+  gap: 20px;
+}
+
+.swiperSlide .label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  white-space: nowrap;
+  margin: 0;
+  line-height: 24px;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--neutral-n20);
+}
+
+.label span {
+  margin: 0;
+  line-height: 25px;
+}
+
+.swipperWrapper .swiperSlide {
+  height: auto;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.checkbox {
+  margin-top: auto;
+  padding-left: 10px;
+}
+
+.reviews .reviewButton {
+  border-radius: 50%;
+}
+
+.newReview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.newReview.dashbaordPage {
+  background-color: var(--neutral-white-n10);
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-n30);
+}
+
+.editIcon {
+  border-radius: 10px;
+  border: 1px solid var(--color-main);
+  background: var(--neutral-white-n10);
+  padding: 7px;
+  display: flex;
+  cursor: pointer;
+}
+
+.heading {
+  color: var(--neutral-black);
+  font-family: var(--headings-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.button {
+  border: 1px solid var(--neutral-white-n10);
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  padding-block: 40px;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  color: var(--neutral-black);
+  text-align: center;
+  font-family: var(--primary-bold-font);
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.text {
+  color: var(--neutral-n100);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

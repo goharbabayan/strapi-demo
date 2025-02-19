@@ -1,0 +1,142 @@
+.header, .emptyHeader {
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.headerSection {
+  width: 100%;
+  height: var(--header-navigation-height);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.logo {
+  width: 230px;
+  height: 61px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% + 100px);
+  gap: 10px;
+}
+
+.headerMenu {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+}
+
+.anchor {
+  display: flex;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  .headerMenu .button {
+    font-size: 13px;
+    line-height: normal;
+    padding: 5px 12px;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .header, .emptyHeader {
+    height: var(--header-height-mobile);
+  }
+
+  .headerSection {
+    height: var(--header-height-mobile);
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .logo {
+    order: 2;
+    width: 124px;
+    height: 33px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .navigationButton {
+    order: 3;
+  }
+
+  .mobileNavigation {
+    position: fixed;
+    background: var(--neutral-white-n10);
+    top: var(--header-height-mobile);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    transform: translateX(100%);
+    transition: transform .4s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--neutral-n70) var(--neutral-n90);
+  }
+
+  .mobileNavigation.show {
+    transform: translateX(0);
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-block: 20px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .headerMenu {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .submenu {
+    transition: all 1s ease-out;
+    overflow-y: hidden;
+    height: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  .submenu.show {
+    height: 300px;
+    overflow-y: visible;
+  }
+}

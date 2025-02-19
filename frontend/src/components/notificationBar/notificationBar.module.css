@@ -1,0 +1,66 @@
+.notificationBar {
+  display: flex;
+  width: 100%;
+  background: var(--color-main);
+  left: 0;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  z-index: 10;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 2px;
+}
+
+.info .button {
+  padding: 7px 12px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 8px;
+}
+
+.notificationText {
+  color: var(--neutral-white-n10);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.iconContainer > svg {
+  width: 52px;
+  height: 37px;
+}
+
+.buttonsWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.notificationBar .button {
+  font-size: 14px;
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 749px) {
+  .info {
+    column-gap: 5px;
+    padding: 4px 6px;
+  }
+
+  .notificationBar .button {
+    white-space: nowrap;
+    padding: 7px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .buttonsWrap {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,92 @@
+.mainWrap {
+  position: relative;
+}
+
+.successfullMessage {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.successfullMessage.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 15px;
+}
+
+.approvedStatus {
+  display: flex;
+  align-items: center;
+}
+
+.modalContent {
+  width: 100%;
+}
+
+.modalItem {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--neutral-n30);
+}
+
+.modalItem:not(:nth-child(1)) {
+  margin-top: 25px;
+}
+
+.bigIcon {
+  width: 189px;
+  height: 136px;
+}
+
+.notificationBarContainer {
+  position: fixed;
+  top: 0;
+  padding: 7px;
+  display: flex;
+  width: 100%;
+  background: var(--color-main);
+  left: 0;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.modal {
+  max-width: 320px;
+  row-gap: 4px;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 949px) {
+  .mainWrap {
+    padding-block: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .modalItem {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .info .button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

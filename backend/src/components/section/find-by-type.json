@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_section_find_by_types",
+  "info": {
+    "displayName": "Find_By_Type",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "providers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.category"
+    },
+    "show_categories_in_the_center": {
+      "type": "boolean",
+      "default": false
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.providerInterestsItemContainer {
+  border-radius: 51px;
+  background: var(--neutral-n20);
+  padding: 10px 16px;
+}
+
+.interestsItemsWrapper,
+.additionalInfoContainer  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.additionalInfoContainer {
+  margin-top: 16px;
+}
+
+.scheduleWrapper {
+  display: flex;
+  gap: 54px;
+  align-items: flex-start;
+}
+
+.scheduleContainer {
+  max-width: 250px;
+  width: 100%;
+  display: grid;
+  gap: 16px;
+  margin-right: 16px;
+}
+
+.scheduleInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  flex-grow: 1;
+}
+
+.scheduleInfoWrapper .providerInterestsItem {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.providerInterestsItem {
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.providerRatesItem {
+  margin: 0;
+  border-radius: 20px;
+}
+
+.providerRatesItemPrice {
+  font-family: var(--primary-bold-font);
+}
+
+.titleAndIconWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.editIcon {
+  border-radius: 10px;
+  border: 1px solid var(--color-main);
+  background: var(--neutral-white-n10);
+  padding: 7px;
+  display: flex;
+  cursor: pointer;
+}
+
+.dataWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subtitle {
+  color: var(--neutral-black);
+  font-family: var(--headings-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-block: 24px;
+  display: block;
+}
+
+
+@media screen and (max-width: 749px) {
+  .scheduleWrapper {
+    flex-wrap: wrap;
+  }
+}

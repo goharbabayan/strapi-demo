@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  background-color: var(--neutral-white-n10);
+  position: relative;
+}
+
+.container .withLink {
+  cursor: pointer;
+}
+
+.loading {
+  min-height: calc(100vh / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrap > img {
+  object-fit: contain;
+}
+
+.wrapper {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.centerText .title{
+  width: 100%;
+  justify-content: center;
+}
+
+.overlay {
+  background: linear-gradient(0deg, rgba(36, 15, 20, 0.60) 0%, rgba(36, 15, 20, 0.60) 100%) no-repeat;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  margin: 0;
+  width: 50%;
+  font-family: var(--headings-font);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--neutral-white-n10);
+  margin-bottom: 24px;
+}
+
+.info .button {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.button.withBannerLink {
+  pointer-events: none;
+}
+
+.button.withLink {
+  pointer-events: auto;
+}
+
+.button > span {
+  display: flex;
+}
+
+@media screen and (max-width: 749px) {
+  .title {
+    font-size: 38px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.allArticlesWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+  border-bottom: 1px solid var(--neutral-n40);
+  padding-bottom: 30px;
+  margin: 20px 0;
+}
+
+.allOtherArticlesTitle {
+  font-size: 20px;
+  margin: 32px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pagination .pageContollerButtons {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  color: var(--neutral-n80);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination .pageContollerButtonsNumber {
+  padding: 12px 20px;
+}
+
+.pagination .pageContollerButtons.next {
+  flex-direction: row-reverse;
+}
+
+.pagination .activePageContollerButton {
+  border-radius: 8px;
+  background-color: var(--neutral-n20);
+}
+
+.pagesNumberContainer {
+  display: flex;
+}
+
+@media screen and (max-width: 989px) {
+  .allArticlesWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pagination .pageContollerButtons.next span,
+  .pagination .pageContollerButtons.prev span {
+    display: none;
+  }
+}

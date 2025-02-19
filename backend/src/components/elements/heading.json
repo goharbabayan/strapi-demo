@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_headings",
+  "info": {
+    "displayName": "Heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

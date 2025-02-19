@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_section_banners",
+  "info": {
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "image_for_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button-link"
+    },
+    "image_for_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
